@@ -16,8 +16,8 @@ auto_switch = false
 
 # Match Ghostty WaveVivid theme (from Wave Terminal default-dark-vivid)
 [theme.custom]
-panel_bg = "#222225"
-sidebar_bg = "#1a1a1a"
+panel_bg = "#18181b"
+sidebar_bg = "#111113"
 surface0 = "#2c2c30"
 surface1 = "#36363b"
 text = "#f2f2f2"
@@ -30,7 +30,7 @@ blue = "#44aaff"
 teal = "#00e8ff"
 mauve = "#ff33ff"
 # Neutral grays for borders and highlighted rows
-surface_dim = "#1e1e21"
+surface_dim = "#141416"
 overlay0 = "#4a4a50"
 overlay1 = "#6a6a70"
 active_row_bg = "#333338"
