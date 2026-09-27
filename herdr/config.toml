@@ -36,6 +36,9 @@ overlay1 = "#6a6a70"
 active_row_bg = "#333338"
 selection_bg = "#3a3a40"
 
+[terminal]
+new_cwd = "follow"   # new panes start in the folder of the pane they split from
+
 [keys]
 # prefix stays ctrl+b. Direct cmd/alt chords need Ghostty (see ~/.config/ghostty/config).
 indexed.tabs = "cmd"                              # cmd+1..9 jumps to tab
@@ -60,7 +63,7 @@ open_notification_target = "prefix+shift+o"
 toggle_sidebar = ["prefix+b", "alt+a"]
 
 # Tabs
-new_tab = ["prefix+c", "cmd+t", "alt+t"]
+new_tab = []  # see [[keys.command]] "new tab in home" below
 previous_tab = ["prefix+p", "cmd+shift+["]
 next_tab = ["prefix+n", "cmd+shift+]"]
 rename_tab = ["prefix+shift+t", "prefix+,"]
@@ -74,6 +77,13 @@ key = "alt+w"
 type = "shell"
 command = "$HOME/.config/herdr/close-pane.sh"
 description = "close pane (keep last pane)"
+
+# New tabs start in $HOME; new panes follow the source pane ([terminal] new_cwd)
+[[keys.command]]
+key = ["prefix+c", "cmd+t", "alt+t"]
+type = "shell"
+command = "\"$HERDR_BIN_PATH\" tab create --workspace \"$HERDR_ACTIVE_WORKSPACE_ID\" --cwd \"$HOME\" --focus"
+description = "new tab in home"
 
 [ui.toast]
 delivery = "off"
