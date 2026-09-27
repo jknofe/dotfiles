@@ -3,7 +3,7 @@
 # right one to config.local, which is loaded at the end of this file.
 
 # Start herdr (attaches to the running session) in every new window
-#command = /bin/zsh -lc herdr
+command = /opt/homebrew/bin/herdr
 
 # Font
 font-family = JetBrains Mono
