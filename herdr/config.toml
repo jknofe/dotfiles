@@ -43,7 +43,7 @@ indexed.tabs = "cmd"                              # cmd+1..9 jumps to tab
 # Panes
 split_vertical = ["prefix+v", "prefix+%", "cmd+d", "alt+d"]              # side by side
 split_horizontal = ["prefix+minus", "prefix+\"", "cmd+shift+d", "alt+s"] # stacked
-close_pane = ["prefix+x", "cmd+w", "alt+w"]
+close_pane = ["prefix+x", "cmd+w"]  # alt+w: see [[keys.command]] below
 zoom = ["prefix+z", "cmd+shift+enter", "alt+m"]
 focus_pane_left = ["prefix+h", "cmd+alt+left"]
 focus_pane_down = ["prefix+j", "cmd+alt+down"]
@@ -67,6 +67,13 @@ rename_tab = ["prefix+shift+t", "prefix+,"]
 close_tab = ["prefix+shift+x", "prefix+&", "cmd+shift+w"]
 move_tab_previous = "prefix+<"
 move_tab_next = "prefix+>"
+
+# alt+w closes the focused pane but keeps the tab open when it is the last pane
+[[keys.command]]
+key = "alt+w"
+type = "shell"
+command = "$HOME/.config/herdr/close-pane.sh"
+description = "close pane (keep last pane)"
 
 [ui.toast]
 delivery = "off"

@@ -39,6 +39,7 @@ link "$DOT/ghostty" "$CFG/ghostty"
 
 # herdr: only config.toml (the folder also holds sockets, logs and session state)
 link "$DOT/herdr/config.toml" "$CFG/herdr/config.toml"
+link "$DOT/herdr/close-pane.sh" "$CFG/herdr/close-pane.sh"
 
 if command -v herdr >/dev/null 2>&1; then
   herdr config check
