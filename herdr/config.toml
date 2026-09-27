@@ -3,10 +3,10 @@ onboarding = false
 [ui]
 status_indicators = "symbols"
 
-# Agent rows: default layout, tab name 20% brighter than overlay0 (#4a4a50)
+# Agent rows: default layout, workspace and tab names 20% brighter than overlay0 (#4a4a50)
 [ui.sidebar.agents]
 rows = [
-  ["state_icon", "machine", "workspace", { token = "tab", fg = "#59595f" }],
+  ["state_icon", "machine", { token = "workspace", fg = "#59595f" }, { token = "tab", fg = "#59595f" }],
   ["agent"],
 ]
 
