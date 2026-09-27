@@ -16,6 +16,6 @@ palette = 13=#ff66ff
 palette = 14=#4cffff
 palette = 15=#ffffff
 # Wave shows window:bgcolor #222225 behind a transparent terminal
-background = #171719
+background = #19191c
 foreground = #f2f2f2
 cursor-color = #00ffa0
