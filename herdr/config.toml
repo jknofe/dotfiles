@@ -1,0 +1,68 @@
+onboarding = false
+
+[ui]
+status_indicators = "symbols"
+
+[theme]
+name = "tokyo-night"
+auto_switch = false
+
+# Match Ghostty WaveVivid theme (from Wave Terminal default-dark-vivid)
+[theme.custom]
+panel_bg = "#222225"
+sidebar_bg = "#1a1a1a"
+surface0 = "#2c2c30"
+surface1 = "#36363b"
+text = "#f2f2f2"
+subtext0 = "#a0a0a0"
+accent = "#3cff2e"
+red = "#ff2a1f"
+green = "#3cff2e"
+yellow = "#ffd600"
+blue = "#44aaff"
+teal = "#00e8ff"
+mauve = "#ff33ff"
+# Neutral grays for borders and highlighted rows
+surface_dim = "#1e1e21"
+overlay0 = "#4a4a50"
+overlay1 = "#6a6a70"
+active_row_bg = "#333338"
+selection_bg = "#3a3a40"
+
+[keys]
+# prefix stays ctrl+b. Direct cmd/alt chords need Ghostty (see ~/.config/ghostty/config).
+indexed.tabs = "cmd"                              # cmd+1..9 jumps to tab
+
+# Panes
+split_vertical = ["prefix+v", "prefix+%", "cmd+d", "alt+d"]              # side by side
+split_horizontal = ["prefix+minus", "prefix+\"", "cmd+shift+d", "alt+s"] # stacked
+close_pane = ["prefix+x", "cmd+w", "alt+w"]
+zoom = ["prefix+z", "cmd+shift+enter", "alt+m"]
+focus_pane_left = ["prefix+h", "cmd+alt+left"]
+focus_pane_down = ["prefix+j", "cmd+alt+down"]
+focus_pane_up = ["prefix+k", "cmd+alt+up"]
+focus_pane_right = ["prefix+l", "cmd+alt+right"]
+cycle_pane_next = ["prefix+tab", "prefix+o", "cmd+]"]
+cycle_pane_previous = ["prefix+shift+tab", "cmd+["]
+last_pane = "prefix+;"
+resize_pane_left = ["prefix+ctrl+h", "cmd+ctrl+left"]
+resize_pane_down = ["prefix+ctrl+j", "cmd+ctrl+down"]
+resize_pane_up = ["prefix+ctrl+k", "cmd+ctrl+up"]
+resize_pane_right = ["prefix+ctrl+l", "cmd+ctrl+right"]
+open_notification_target = "prefix+shift+o"
+toggle_sidebar = ["prefix+b", "alt+a"]
+
+# Tabs
+new_tab = ["prefix+c", "cmd+t", "alt+t"]
+previous_tab = ["prefix+p", "cmd+shift+["]
+next_tab = ["prefix+n", "cmd+shift+]"]
+rename_tab = ["prefix+shift+t", "prefix+,"]
+close_tab = ["prefix+shift+x", "prefix+&", "cmd+shift+w"]
+move_tab_previous = "prefix+<"
+move_tab_next = "prefix+>"
+
+[ui.toast]
+delivery = "off"
+
+[ui.sound]
+enabled = true

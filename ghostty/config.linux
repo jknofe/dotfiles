@@ -1,0 +1,2 @@
+# Linux-only Ghostty settings (linked to config.local by sync.sh)
+# Alt already works as alt on Linux; no option-as-alt or cmd unbinds needed.

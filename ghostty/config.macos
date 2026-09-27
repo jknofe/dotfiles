@@ -1,0 +1,46 @@
+# macOS-only Ghostty settings (linked to config.local by sync.sh)
+
+# Interpret colors in the wider Display P3 gamut (more saturated on Mac displays)
+window-colorspace = display-p3
+
+# Left Option acts as alt (for herdr alt+ bindings), right Option still types @ [ ] { } | etc.
+macos-option-as-alt = left
+
+# Hand these cmd shortcuts to herdr instead of handling them in Ghostty.
+# Splits / panes
+keybind = super+d=unbind
+keybind = super+shift+d=unbind
+keybind = super+w=unbind
+keybind = super+shift+enter=unbind
+keybind = super+[=unbind
+keybind = super+]=unbind
+keybind = super+alt+arrow_left=unbind
+keybind = super+alt+arrow_right=unbind
+keybind = super+alt+arrow_up=unbind
+keybind = super+alt+arrow_down=unbind
+keybind = super+ctrl+arrow_left=unbind
+keybind = super+ctrl+arrow_right=unbind
+keybind = super+ctrl+arrow_up=unbind
+keybind = super+ctrl+arrow_down=unbind
+# Tabs
+keybind = super+t=unbind
+keybind = super+shift+w=unbind
+keybind = super+shift+[=unbind
+keybind = super+shift+]=unbind
+keybind = super+1=unbind
+keybind = super+2=unbind
+keybind = super+3=unbind
+keybind = super+4=unbind
+keybind = super+5=unbind
+keybind = super+6=unbind
+keybind = super+7=unbind
+keybind = super+8=unbind
+keybind = super+9=unbind
+keybind = super+digit_1=unbind
+keybind = super+digit_2=unbind
+keybind = super+digit_3=unbind
+keybind = super+digit_4=unbind
+keybind = super+digit_5=unbind
+keybind = super+digit_6=unbind
+keybind = super+digit_7=unbind
+keybind = super+digit_8=unbind
