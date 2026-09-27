@@ -3,6 +3,9 @@
 # Interpret colors in the wider Display P3 gamut (more saturated on Mac displays)
 window-colorspace = display-p3
 
+# App icon in Dock and app switcher
+macos-icon = retro
+
 # Left Option acts as alt (for herdr alt+ bindings), right Option still types @ [ ] { } | etc.
 macos-option-as-alt = left
 
