@@ -37,6 +37,21 @@ link() {
 ln -sfn "config.$OS" "$DOT/ghostty/config.local"
 link "$DOT/ghostty" "$CFG/ghostty"
 
+# Ghostty icon on Linux: same retro icon as macos-icon in config.macos.
+# Copy the installed desktop entry to ~/.local/share/applications (which takes
+# precedence) with Icon= pointing at the repo image.
+if [[ "$OS" == linux ]]; then
+  apps="${XDG_DATA_HOME:-$HOME/.local/share}/applications"
+  for src in /var/lib/snapd/desktop/applications/ghostty_ghostty.desktop \
+             /usr/share/applications/com.mitchellh.ghostty.desktop; do
+    [[ -f "$src" ]] || continue
+    mkdir -p "$apps"
+    sed "s|^Icon=.*|Icon=$DOT/ghostty/icons/retro.png|" "$src" > "$apps/$(basename "$src")"
+    echo "icon    $apps/$(basename "$src")"
+    break
+  done
+fi
+
 # herdr: only config.toml (the folder also holds sockets, logs and session state)
 link "$DOT/herdr/config.toml" "$CFG/herdr/config.toml"
 link "$DOT/herdr/close-pane.sh" "$CFG/herdr/close-pane.sh"
