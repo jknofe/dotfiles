@@ -11,4 +11,7 @@ font-family = JetBrains Mono
 # Colors (theme in themes/WaveVivid, converted from Wave Terminal)
 theme = WaveVivid
 
+# No bell sounds (system alert or custom audio); keep the visual cues
+bell-features = no-system,no-audio,attention,title,no-border
+
 config-file = ?config.local
