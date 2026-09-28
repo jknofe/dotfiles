@@ -1,5 +1,10 @@
 # macOS-only Ghostty settings (linked to config.local by sync.sh)
 
+# herdr from Homebrew
+command = /opt/homebrew/bin/herdr
+
+font-size = 14
+
 # Interpret colors in the wider Display P3 gamut (more saturated on Mac displays)
 window-colorspace = display-p3
 

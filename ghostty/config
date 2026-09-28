@@ -2,12 +2,11 @@
 # OS-specific settings live in config.macos / config.linux; sync.sh links the
 # right one to config.local, which is loaded at the end of this file.
 
-# Start herdr (attaches to the running session) in every new window
-command = /opt/homebrew/bin/herdr
+# Start herdr (attaches to the running session) in every new window.
+# The herdr path (`command`) is set per OS in config.macos / config.linux.
 
-# Font
+# Font (size is set per OS: Linux renders the same point size larger)
 font-family = JetBrains Mono
-font-size = 14
 
 # Colors (theme in themes/WaveVivid, converted from Wave Terminal)
 theme = WaveVivid
